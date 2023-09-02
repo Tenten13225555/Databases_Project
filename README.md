@@ -1,36 +1,40 @@
-# Databases_Project
-## Hospital Database Modeling: Subtype/Supertype Relationships in RVH
-This project focuses on modeling a database for the Royal Victoria Hospital (RVH) using subtype/supertype relationships. We aim to structure the database in a way that captures the unique roles and shared attributes among different entities like employees and patients.
+# Hospital Resource Management: A SQL Project
 
-## Table of Contents
-About
-Entity Types
-Attribute Types
-Key Concepts
-Methodology
-Implications
+## Overview
 
-## About
-The project starts by introducing the concept of subtype/supertype relationships. These relationships are crucial for modeling entities that share some common characteristics while possessing unique attributes. The setting for these relationships is the healthcare environment of RVH.
+The healthcare industry faces increasing challenges related to data management and resource allocation. This project aims to build a database model that efficiently manages hospital resources, from patients and care centers to treatments, nurses, and physicians. 
 
-## Entity Types
-Employees: A general category that encompasses different roles within the hospital.
-Physicians: A subtype of employees, with additional attributes like specialty.
-Patients: An entity type with attributes such as health conditions.
+## Problem Statement
 
-## Attribute Types
-Shared Attributes: These are attributes common to multiple entity types. For example, both employees and patients may have a name and ID.
-Unique Attributes: These attributes are unique to a particular subtype. For instance, specialty is unique to physicians.
+With an ever-increasing number of patients, treatments, and staff, it's crucial for healthcare providers to have quick and accurate access to information. Whether it's knowing which nurse is in charge of a specific care center or tracking patient treatments, data management is a significant challenge.
 
-## Key Concepts
-Inheritance: Subtypes inherit attributes and relationships from their supertype.
-Normalization: The structure aims for database normalization to minimize redundancy and dependency.
+## Project Objective
 
-## Methodology
-Design Approach: The project adopts a structured approach to database design, focusing initially on defining entity types and then establishing relationships.
+The main objective is to create a robust and scalable SQL-based database that:
 
-Logical Modeling: The aim is to create a logical model that can be implemented in a physical database.
+1. Streamlines the management of patients, care centers, and staff
+2. Enables quick and efficient retrieval of information
+3. Ensures data integrity and reliability
 
-## Implications
-Efficiency: A well-designed model allows the hospital to manage its data more efficiently.
-Data Integrity: The model ensures that the data is accurate and consistent.
+## Features
+
+- **Patients Table**: Stores patient ID, name, address, phone number, and associated care center.
+- **Care Centers Table**: Information about different care centers and their in-charge nurses.
+- **Treatments Table**: Contains ongoing treatments with details like treatment type and associated physician.
+- **Nurses Table**: Information on nurses, their types of certificates, and salaries.
+- **Physicians Table**: Stores details of physicians, their specializations, and salaries.
+
+## Technical Implementation
+
+This project is implemented using SQL with the following major steps:
+
+1. **Table Creation**: SQL scripts to create tables for each entity.
+2. **Indexing**: Creating necessary indexes to speed up data retrieval.
+3. **Data Insertion**: Inserting sample data to simulate the hospital environment.
+4. **Querying**: SQL queries for data retrieval and management.
+
+## Getting Started
+
+1. Clone this repository.
+2. Make sure you have MySQL or a compatible database installed.
+3. Run the SQL scripts in your database.
