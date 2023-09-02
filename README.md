@@ -28,6 +28,7 @@ Normalization: The structure aims for database normalization to minimize redunda
 
 ## Methodology
 Design Approach: The project adopts a structured approach to database design, focusing initially on defining entity types and then establishing relationships.
+
 Logical Modeling: The aim is to create a logical model that can be implemented in a physical database.
 
 ## Implications
